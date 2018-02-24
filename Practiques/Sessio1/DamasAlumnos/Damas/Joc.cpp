@@ -52,18 +52,15 @@ void joc()
 		{
 			xMouse = Mouse_getX();
 			yMouse = Mouse_getY();
-			if ((xMouse != 0) && (yMouse != 0))
-			{
 
-					// AFEGIR CODI: Agafar posició de la casella on s'ha clicat
-					// S'haurà de controlar si el clic correspon a la casella origen o
-					// a la casella final del moviment
+			// AFEGIR CODI: Agafar posició de la casella on s'ha clicat
+			// S'haurà de controlar si el clic correspon a la casella origen o
+			// a la casella final del moviment
 
-					// AFEGIR CODI: Si ja hem clicat origen i destí,
-					// fer comprovació que el moviment sigui correcte i, si ho ´es
-					// fer el moviment
+			// AFEGIR CODI: Si ja hem clicat origen i destí,
+			// fer comprovació que el moviment sigui correcte i, si ho ´es
+			// fer el moviment
 						
-			}
 		}
 
 

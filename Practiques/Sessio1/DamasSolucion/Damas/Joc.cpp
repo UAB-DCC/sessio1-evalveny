@@ -112,26 +112,22 @@ void joc()
 		{
 			x = Mouse_getX();
 			y = Mouse_getY();
-			if ((x != 0) && (y != 0))
-			{
-				if (cont == 2)
-				{	
-					getPosMatrix(x, y, fila,columna);
-					if (estatinicial[fila - 1][columna - 1] > 0)
-					{
-						filaantes = fila;
-						columnaantes = columna;
-						cont--;
-					}
-				}
-				else if (cont == 1)
+			if (cont == 2)
+			{	
+				getPosMatrix(x, y, fila,columna);
+				if (estatinicial[fila - 1][columna - 1] > 0)
 				{
-					getPosMatrix(x, y, fila, columna);
-					checkMovementPiece(fila, columna, filaantes, columnaantes, estatinicial);
-					cont = 2;
+					filaantes = fila;
+					columnaantes = columna;
+					cont--;
 				}
 			}
-//				}
+			else if (cont == 1)
+			{
+				getPosMatrix(x, y, fila, columna);
+				checkMovementPiece(fila, columna, filaantes, columnaantes, estatinicial);
+				cont = 2;
+			}
 		}
 
 		// TO DO: MOVER FICHA POR TABLERO, SI ESTÁ VACÍA SE DESPLAZA, MOVERSE DE UNA LADO A OTRO
