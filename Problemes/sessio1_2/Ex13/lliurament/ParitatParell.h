@@ -1,0 +1,15 @@
+//
+//  PariratParell.h
+//  Repàs de les estructures de programació bàsiques
+//
+
+#ifndef FUNCIONS_PARITAT_PARELL_H
+#define FUNCIONS_PARITAT_PARELL_H
+
+#include <string>
+
+using namespace std;
+
+bool bitParitatParell(int* trama);
+
+#endif
