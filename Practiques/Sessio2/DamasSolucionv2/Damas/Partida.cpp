@@ -63,14 +63,14 @@ void Partida::processaClick(int xMouse, int yMouse)
 	}
 
 }
-void Partida::visualitza(int torn, bool avis)
+void Partida::visualitza()
 {
-	m_tauler.dibuixa(torn, avis);
+	m_tauler.dibuixa(m_torn, m_movimentInvalid);
 }
 
-bool Partida::ferMoviment(int torn)
+bool Partida::ferMoviment()
 {
-	bool check = m_tauler.processaMoviment(m_filaOrigen, m_columnaOrigen, m_filaDesti, m_columnaDesti, torn);
+	bool check = m_tauler.processaMoviment(m_filaOrigen, m_columnaOrigen, m_filaDesti, m_columnaDesti, m_torn);
 	if (check)
 	{
 		m_filaOrigen = 0;
@@ -91,22 +91,13 @@ bool Partida::ferMoviment(int torn)
 		return false;
 	}
 }
-int Partida::getTorn()
-{
-	return m_torn;
-}
 
 bool Partida::getMovimentComplet()
 {
 	return m_movimentComplet;
 }
 
-bool Partida::getMovimentInvalid()
-{
-	return m_movimentInvalid;
-}
-
-void Partida::canviaTorn(int torn)
+void Partida::canviaTorn()
 {
 	m_movimentComplet = false;
 	if (m_torn == TORN_BLANC)

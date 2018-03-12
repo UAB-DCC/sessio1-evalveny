@@ -8,12 +8,10 @@ public:
 	~Partida();
 	void inicialitza();
 	void processaClick(int xMouse, int yMouse);
-	void visualitza(int torn, bool avis);
-	int getTorn();
-	void canviaTorn(int torn);
+	void visualitza();
+	void canviaTorn();
 	bool getMovimentComplet();
-	bool getMovimentInvalid();
-	bool ferMoviment(int torn);
+	bool ferMoviment();
 private:
 	Tauler m_tauler;
 	int m_torn;

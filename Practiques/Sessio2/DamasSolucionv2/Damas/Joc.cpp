@@ -37,12 +37,12 @@ void joc()
 
 		if (partida.getMovimentComplet())
 		{
-			bool check = partida.ferMoviment(partida.getTorn());
+			bool check = partida.ferMoviment();
 			if (check)
-				partida.canviaTorn(partida.getTorn());
+				partida.canviaTorn();
 		}
 
-		partida.visualitza(partida.getTorn(), partida.getMovimentInvalid());
+		partida.visualitza();
 
 		// Actualitza la pantalla
 		jocLib.update();
