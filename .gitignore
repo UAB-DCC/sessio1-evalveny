@@ -2,3 +2,5 @@ Debug
 x64
 /ConvalidacioFI/Exercici1/*.db
 *.db
+/Practiques/Sessio2/DamasSolucionv2/Program/*.pdb
+ipch
