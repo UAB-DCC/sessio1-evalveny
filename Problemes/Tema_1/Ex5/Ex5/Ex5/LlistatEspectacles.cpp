@@ -2,16 +2,12 @@
 
 
 
-LlistatEspectacles::LlistatEspectacles()
-{
-	m_NEspectacles = 0;
-}
-
-
+/*
 LlistatEspectacles::~LlistatEspectacles()
 {
 	
 }
+*/
 
 bool LlistatEspectacles::afegeixEspectacle(Espectacle& e)
 {

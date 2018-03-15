@@ -1,5 +1,5 @@
 #include "Espectacle.h"
-
+/*
 Espectacle::Espectacle()
 {
 	m_NEntradesLliures = 0;
@@ -20,3 +20,4 @@ Espectacle::~Espectacle()
 {
 	
 }
+*/
