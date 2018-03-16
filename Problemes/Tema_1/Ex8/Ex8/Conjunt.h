@@ -9,12 +9,13 @@ public:
 	Conjunt(int v[], int mida);
 
 	int getNumElements() { return m_numElems; }
-	bool pertany(int el);
+	int pertany(int el);
 
 	Conjunt operator+(const Conjunt &c);
 	Conjunt operator+(const int& el);
 	Conjunt operator-(const Conjunt &c);
 	Conjunt operator-(const int& el);
+	bool operator==(const Conjunt &c);
 	
 	void imprimir()const;
 private:

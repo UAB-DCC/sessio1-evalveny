@@ -11,7 +11,7 @@ bool testIguals(Conjunt& c1,int v[],int mida)
 		int j = 0;
 		while (iguals && (j < mida))
 		{
-			if (!c1.pertany(v[j]))
+			if (c1.pertany(v[j])==0)
 			{
 				iguals = false;
 			}

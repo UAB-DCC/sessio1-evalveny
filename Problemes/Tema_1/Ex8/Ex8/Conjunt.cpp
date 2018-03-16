@@ -21,23 +21,18 @@ Conjunt::Conjunt(int v[], int mida)
 	}
 }
 
-bool Conjunt::pertany(int el)
+int Conjunt::pertany(int el)
 {
-	bool trobat = false;
+	int compta = 0;
 
-	int i = 0;
-	while(!trobat && (i < m_numElems))
+	for (int i = 0;i< m_numElems;i++)
 	{
 		if (m_elements[i] == el)
 		{
-			trobat = true;
-		}
-		else
-		{
-			i++;
-		}
+			compta++;
+		}		
 	}
-	return trobat;
+	return compta;
 }
 
 void Conjunt::imprimir() const
@@ -108,4 +103,30 @@ Conjunt Conjunt::operator- (const Conjunt& c)
 	}
 	
 	return cRes;	
+}
+
+bool Conjunt::operator==(const Conjunt &c)
+{
+	bool iguals = true;
+	if (m_numElems != c.m_numElems)
+	{
+		iguals = false;
+	}
+	else
+	{
+		int i = 0;
+		while( (i < m_numElems) && iguals)
+		{
+			if (pertany(m_elements[i]) != pertany(c.m_elements[i]))
+			{
+				iguals = false;
+			}
+			else
+			{
+				i++;
+			}
+		}
+	}
+	
+	return iguals;
 }
