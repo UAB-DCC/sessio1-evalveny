@@ -27,7 +27,7 @@ bool testIguals(Conjunt& c1,int v[],int mida)
 
 void imprimirVector(int v[], int mida)
 {
-	cout << "[ ";
+	cout << "Comment :=>> [ ";
 	for (int i = 0; i < mida; i++)
 	{
 		cout << v[i] << ",";
@@ -59,7 +59,7 @@ float testConjunt()
 
 	cout << "Comment :=>>" << endl;
 	cout << "Comment :=>> ----------------------------------------------------------" << endl;
-	cout << "Comment :=>> Iniciant test conjunt: Inicialització, imprimir i pertany:" << endl;
+	cout << "Comment :=>> Iniciant test conjunt: Inicialitzacio, imprimir i pertany:" << endl;
 	cout << "Comment :=>> ----------------------------------------------------------" << endl;
 	cout << "Comment :=>>" << endl;
 	puntsParcials = 0;
@@ -85,16 +85,16 @@ float testConjunt()
 	}
 	
 	cout << "Comment :=>> -------------------------------------------------------" << endl;
-	cout << "Comment :=>> Final test conjunt: Inicialització, imprimir i pertany:" << endl;
+	cout << "Comment :=>> Final test conjunt: Inicialitzacio, imprimir i pertany:" << endl;
 	cout << "Comment :=>> Punts: " << puntsParcials << " (sobre: 2)" << endl;
 	cout << "Comment :=>> -------------------------------------------------------" << endl;
 	punts += puntsParcials;
 
 
 	cout << "Comment :=>>" << endl;
-	cout << "Comment :=>> ----------------------------------------" << endl;
-	cout << "Comment :=>> Iniciant test conjunt: Constructor Copia" << endl;
-	cout << "Comment :=>> ----------------------------------------" << endl;
+	cout << "Comment :=>> ------------------------------------------------------" << endl;
+	cout << "Comment :=>> Iniciant test conjunt: Constructor Copia i operador ==" << endl;
+	cout << "Comment :=>> ------------------------------------------------------" << endl;
 	cout << "Comment :=>>" << endl;
 	puntsParcials = 0;
 
@@ -112,13 +112,25 @@ float testConjunt()
 	}
 	else
 	{
-		puntsParcials += 1;
+		cout << "Comment :=>> CORRECTE CONSTRUCTOR COPIA " << endl;
+		puntsParcials += 0.5;
+		int vOpIg[MAXELEMS] = { 12,11,10,9,8,7,6,5,4,3,2,1 };
+		Conjunt cOpIg(vOpIg, mida[0]);
+		if (c == cOpIg)
+		{
+			cout << "Comment :=>> CORRECTE OPERADOR == " << endl;
+			puntsParcials += 0.5;
+		}
+		else
+		{
+			cout << "Comment :=>> ERROR OPERADOR == ";
+		}		
 	}
 
-	cout << "Comment :=>> --------------------------------------" << endl;
-	cout << "Comment :=>> Final test conjunt: Constructor Copia:" << endl;
+	cout << "Comment :=>> ----------------------------------------------------" << endl;
+	cout << "Comment :=>> Final test conjunt: Constructor Copia i operador ==:" << endl;
 	cout << "Comment :=>> Punts: " << puntsParcials << " (sobre: 1)" << endl;
-	cout << "Comment :=>> --------------------------------------" <<endl;
+	cout << "Comment :=>> ----------------------------------------------------" <<endl;
 	punts += puntsParcials;
 
 	cout << "Comment :=>>" << endl;
@@ -137,18 +149,24 @@ float testConjunt()
 		c = c + c2;
 		midaResSuma += mida[i];
 	}
-	
-	cout << "Comment :=>> CONJUNT SUMAT: ";
+	cout << "Comment :=>> CONJUNTS SUMATS: " <<endl;
+	for (int i = 0; i < MAXTEST; i++)
+	{
+		imprimirVector(v[i],mida[i]);
+	}
+	cout << "Comment :=>> RESULTAT CONJUNT TOTAL SUMAT: " <<endl;
+	cout << "Comment :=>> ";
 	c.imprimir();
 	iguals = testIguals(c, vResSuma, midaResSuma);
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT SUMAT: SOLUCIO ";
+		cout << "Comment :=>> ERROR CONJUNT SUMAT: SOLUCIO " <<endl;
 		imprimirVector(vResSuma, midaResSuma);
 	}
 	else
 	{
+		cout << "Comment :=>> CORRECTE CONJUNT SUMAT "<<endl;
 		puntsParcials += 2;
 	}
 
@@ -169,18 +187,22 @@ float testConjunt()
 	int midaResSumaElement = midaResSuma+1;
 
 	c = c + 50;
-	cout << "Comment :=>> CONJUNT SUMAT ELEMENT: ";
+	cout << "Comment :=>> CONJUNT: " <<endl;
+	imprimirVector(vResSuma, midaResSuma);
+	cout << "Comment :=>> ELEMENT A SUMAR 50. "<<endl;
+	cout << "Comment :=>> RESULTAT CONJUNT SUMAT ELEMENT: "<<endl;
 	c.imprimir();
 
 	iguals = testIguals(c, vResSumaElement, midaResSumaElement);
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT SUMAT ELEMENT: SOLUCIO ";
+		cout << "Comment :=>> ERROR CONJUNT SUMAT ELEMENT: SOLUCIO " <<endl;
 		imprimirVector(vResSumaElement, midaResSumaElement);
 	}
 	else
 	{
+		cout << "Comment :=>> CORRECTE CONJUNT SUMAT ELEMENT" << endl;
 		puntsParcials += 1.5;
 	}
 
@@ -208,17 +230,26 @@ float testConjunt()
 		midaResResta -= mida[i];
 	}
 
-	cout << "Comment :=>> CONJUNT RESTAT: ";
+	cout << "Comment :=>> CONJUNTS RESTATS: " << endl;
+	imprimirVector(vResSumaElement, midaResSumaElement);
+	for (int i = 1; i < MAXTEST; i=i+2)
+	{
+		imprimirVector(v[i], mida[i]);
+	}
+	cout << "Comment :=>> RESULTAT CONJUNT TOTAL RESTAT: " << endl;
+	cout << "Comment :=>> ";
 	c.imprimir();
+
 	iguals = testIguals(c, vResResta, midaResResta);
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT RESTAT: SOLUCIO ";
+		cout << "Comment :=>> ERROR CONJUNT RESTAT: SOLUCIO " <<endl;
 		imprimirVector(vResResta, midaResResta);
 	}
 	else
 	{
+		cout << "Comment :=>> CORRECTE CONJUNT RESTAT " << endl;
 		puntsParcials += 2;
 	}
 
@@ -239,18 +270,26 @@ float testConjunt()
 	int midaResRestaElement = midaResResta-1;
 
 	c = c- 50;
-	cout << "Comment :=>> CONJUNT RESTANT ELEMENT: ";
+	cout << "Comment :=>> CONJUNT: ";
+	imprimirVector(vResResta, midaResResta);
+	cout << "Comment :=>> ELEMENT A RESTAR 50. " << endl;
+	cout << "Comment :=>> RESULTAT CONJUNT RESTAR ELEMENT: " << endl;
+	c.imprimir();
+
+	cout << "Comment :=>> CONJUNT RESTANT ELEMENT: " <<endl;
+	cout << "Comment :=>> ";
 	c.imprimir();
 
 	iguals = testIguals(c, vResRestaElement, midaResRestaElement);
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT RESTA ELEMENT: SOLUCIO ";
+		cout << "Comment :=>> ERROR CONJUNT RESTA ELEMENT: SOLUCIO " <<endl;
 		imprimirVector(vResRestaElement, midaResRestaElement);
 	}
 	else
 	{
+		cout << "Comment :=>> CORRECTE CONJUNT RESTA ELEMENT" <<endl;
 		puntsParcials += 1.5;
 	}
 

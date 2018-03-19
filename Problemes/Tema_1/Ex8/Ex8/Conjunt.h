@@ -9,7 +9,7 @@ public:
 	Conjunt(int v[], int mida);
 
 	int getNumElements() { return m_numElems; }
-	int pertany(int el);
+	int pertany(int el) const;
 
 	Conjunt operator+(const Conjunt &c);
 	Conjunt operator+(const int& el);

@@ -21,7 +21,7 @@ Conjunt::Conjunt(int v[], int mida)
 	}
 }
 
-int Conjunt::pertany(int el)
+int Conjunt::pertany(int el) const
 {
 	int compta = 0;
 
@@ -117,7 +117,7 @@ bool Conjunt::operator==(const Conjunt &c)
 		int i = 0;
 		while( (i < m_numElems) && iguals)
 		{
-			if (pertany(m_elements[i]) != pertany(c.m_elements[i]))
+			if ( pertany(m_elements[i]) != c.pertany(m_elements[i]) )
 			{
 				iguals = false;
 			}
