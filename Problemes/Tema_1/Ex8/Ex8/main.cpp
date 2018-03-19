@@ -74,7 +74,7 @@ float testConjunt()
 
 		if (!iguals)
 		{
-			cout << "Comment :=>> ERROR CONJUNT " << i << ": SOLUCIO ";
+			cout << "Comment :=>> ERROR CONJUNT " << i << ": SOLUCIO " << endl;
 			imprimirVector(v[i], mida[i]);
 		}
 		else
@@ -107,7 +107,7 @@ float testConjunt()
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT COPIAT: SOLUCIO ";
+		cout << "Comment :=>> ERROR CONJUNT COPIAT: SOLUCIO " << endl;
 		imprimirVector(v[0], mida[0]);
 	}
 	else
@@ -135,7 +135,7 @@ float testConjunt()
 
 	cout << "Comment :=>>" << endl;
 	cout << "Comment :=>> -------------------------" << endl;
-	cout << "Comment :=>> Iniciant test conjunt: +=" << endl;
+	cout << "Comment :=>> Iniciant test conjunt: +" << endl;
 	cout << "Comment :=>> -------------------------" << endl;
 	cout << "Comment :=>>" << endl;
 	puntsParcials = 0;
@@ -161,7 +161,7 @@ float testConjunt()
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT SUMAT: SOLUCIO " <<endl;
+		cout << "Comment :=>> ERROR CONJUNT SUMAT: SOLUCIO " << endl;
 		imprimirVector(vResSuma, midaResSuma);
 	}
 	else
@@ -191,13 +191,14 @@ float testConjunt()
 	imprimirVector(vResSuma, midaResSuma);
 	cout << "Comment :=>> ELEMENT A SUMAR 50. "<<endl;
 	cout << "Comment :=>> RESULTAT CONJUNT SUMAT ELEMENT: "<<endl;
+	cout << "Comment :=>> ";
 	c.imprimir();
 
 	iguals = testIguals(c, vResSumaElement, midaResSumaElement);
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT SUMAT ELEMENT: SOLUCIO " <<endl;
+		cout << "Comment :=>> ERROR CONJUNT SUMAT ELEMENT: SOLUCIO " << endl;
 		imprimirVector(vResSumaElement, midaResSumaElement);
 	}
 	else
@@ -215,7 +216,7 @@ float testConjunt()
 
 	cout << "Comment :=>>" << endl;
 	cout << "Comment :=>> -------------------------" << endl;
-	cout << "Comment :=>> Iniciant test conjunt: -=" << endl;
+	cout << "Comment :=>> Iniciant test conjunt: -" << endl;
 	cout << "Comment :=>> -------------------------" << endl;
 	cout << "Comment :=>>" << endl;
 	puntsParcials = 0;
@@ -244,7 +245,7 @@ float testConjunt()
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT RESTAT: SOLUCIO " <<endl;
+		cout << "Comment :=>> ERROR CONJUNT RESTAT: SOLUCIO " << endl;
 		imprimirVector(vResResta, midaResResta);
 	}
 	else
@@ -254,7 +255,7 @@ float testConjunt()
 	}
 
 	cout << "Comment :=>> -----------------------" << endl;
-	cout << "Comment :=>> Final test conjunt: -=:" << endl;
+	cout << "Comment :=>> Final test conjunt: -:" << endl;
 	cout << "Comment :=>> Punts: " << puntsParcials << " (sobre: 2)" << endl;
 	cout << "Comment :=>> -----------------------" << endl;
 	punts += puntsParcials;
@@ -262,7 +263,7 @@ float testConjunt()
 
 	cout << "Comment :=>>" << endl;
 	cout << "Comment :=>> ---------------------------------" << endl;
-	cout << "Comment :=>> Iniciant test conjunt: -= element" << endl;
+	cout << "Comment :=>> Iniciant test conjunt: - element" << endl;
 	cout << "Comment :=>> ---------------------------------" << endl;
 	cout << "Comment :=>>" << endl;
 	puntsParcials = 0;
@@ -274,9 +275,6 @@ float testConjunt()
 	imprimirVector(vResResta, midaResResta);
 	cout << "Comment :=>> ELEMENT A RESTAR 50. " << endl;
 	cout << "Comment :=>> RESULTAT CONJUNT RESTAR ELEMENT: " << endl;
-	c.imprimir();
-
-	cout << "Comment :=>> CONJUNT RESTANT ELEMENT: " <<endl;
 	cout << "Comment :=>> ";
 	c.imprimir();
 
@@ -284,7 +282,7 @@ float testConjunt()
 
 	if (!iguals)
 	{
-		cout << "Comment :=>> ERROR CONJUNT RESTA ELEMENT: SOLUCIO " <<endl;
+		cout << "Comment :=>> ERROR CONJUNT RESTA ELEMENT: SOLUCIO " << endl;
 		imprimirVector(vResRestaElement, midaResRestaElement);
 	}
 	else
@@ -294,7 +292,7 @@ float testConjunt()
 	}
 
 	cout << "Comment :=>> -------------------------------" << endl;
-	cout << "Comment :=>> Final test conjunt: -=: element" << endl;
+	cout << "Comment :=>> Final test conjunt: -: element" << endl;
 	cout << "Comment :=>> Punts: " << puntsParcials << " (sobre: 1.5)" << endl;
 	cout << "Comment :=>> -------------------------------" << endl;
 	punts += puntsParcials;
