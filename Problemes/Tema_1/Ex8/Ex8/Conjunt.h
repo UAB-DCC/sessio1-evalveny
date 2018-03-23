@@ -6,16 +6,16 @@ class Conjunt
 public:
 	Conjunt() { m_numElems = 0; };
 	Conjunt(const Conjunt& c);
-	Conjunt(int v[], int mida);
+	Conjunt(const int v[], int mida);
 
-	int getNumElements() { return m_numElems; }
+	int getNumElements() const { return m_numElems; }
 	int pertany(int el) const;
 
-	Conjunt operator+(const Conjunt &c);
-	Conjunt operator+(const int& el);
-	Conjunt operator-(const Conjunt &c);
-	Conjunt operator-(const int& el);
-	bool operator==(const Conjunt &c);
+	Conjunt operator+(const Conjunt &c)const;
+	Conjunt operator+(const int& el)const;
+	Conjunt operator-(const Conjunt &c)const;
+	Conjunt operator-(const int& el)const;
+	bool operator==(const Conjunt &c)const;
 	
 	void imprimir()const;
 private:

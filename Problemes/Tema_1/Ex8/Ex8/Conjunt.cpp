@@ -9,7 +9,7 @@ Conjunt::Conjunt(const Conjunt& c)
 	m_numElems = c.m_numElems;
 }
 
-Conjunt::Conjunt(int v[], int mida)
+Conjunt::Conjunt(const int v[], int mida)
 {
 	if (mida <= MAXELEMENTS)
 	{
@@ -45,7 +45,7 @@ void Conjunt::imprimir() const
 	cout << " ]" <<endl;		
 }
 
-Conjunt Conjunt::operator+ (const Conjunt& c)
+Conjunt Conjunt::operator+ (const Conjunt& c) const
 {
 	Conjunt cRes(m_elements, m_numElems);
 
@@ -61,7 +61,7 @@ Conjunt Conjunt::operator+ (const Conjunt& c)
 	return cRes;
 }
 
-Conjunt Conjunt::operator+ (const int& el)
+Conjunt Conjunt::operator+ (const int& el)const
 {
 	Conjunt cRes(m_elements, m_numElems);
 
@@ -73,7 +73,7 @@ Conjunt Conjunt::operator+ (const int& el)
 	return cRes;
 }
 
-Conjunt Conjunt::operator- (const int& el)
+Conjunt Conjunt::operator- (const int& el)const
 {
 	Conjunt cRes(m_elements,m_numElems);
 	bool trobat = false;
@@ -94,7 +94,7 @@ Conjunt Conjunt::operator- (const int& el)
 	return cRes;
 }
 
-Conjunt Conjunt::operator- (const Conjunt& c)
+Conjunt Conjunt::operator- (const Conjunt& c)const
 {
 	Conjunt cRes(m_elements, m_numElems);
 	for (int i = 0; i < c.m_numElems; i++)
@@ -105,7 +105,7 @@ Conjunt Conjunt::operator- (const Conjunt& c)
 	return cRes;	
 }
 
-bool Conjunt::operator==(const Conjunt &c)
+bool Conjunt::operator==(const Conjunt &c)const
 {
 	bool iguals = true;
 	if (m_numElems != c.m_numElems)
