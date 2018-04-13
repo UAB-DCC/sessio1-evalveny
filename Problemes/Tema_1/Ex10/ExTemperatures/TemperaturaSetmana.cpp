@@ -8,7 +8,8 @@ void TemperaturaSetmana::llegeixTemperatures(string nomFitxer)
 {
 	ifstream fitxer;
 
-	fitxer.open(nomFitxer.c_str());
+	//fitxer.open(nomFitxer.c_str());
+	fitxer.open(nomFitxer);
 	if(fitxer.is_open())
 	{
 		for (int dia = 0; dia < DIESSETMANA; dia++)
