@@ -6,46 +6,37 @@ using namespace std;
 const int MAXPUNTS1 = 3;
 const int MAXPUNTS2 = 5;
 
-void centroide(Punt* p1, Punt* p2,Punt* centroid)
+void centroide(Punt* pIni, Punt* pFi,Punt* pCentroid)
 {
-	Punt* pAux;
-	pAux = p1;
-
 	float x = 0;
 	float y = 0;
 	int numVertex = 0;
 
-	while (pAux != p2)
+	while (pIni <= pFi)
 	{
-		x += pAux->getX();
-		y += pAux->getY();
-		pAux++;
+		x += pIni->getX();
+		y += pIni->getY();
+		pIni++;
 		numVertex++;
 	}
-	x += pAux->getX();
-	y += pAux->getY();
-	numVertex++;
-
-	centroid->setX(x / numVertex);
-	centroid->setY(y / numVertex);
+	
+	pCentroid->setX(x / numVertex);
+	pCentroid->setY(y / numVertex);
 	
 }
 
-void inicialitza(Punt* p1, Punt* p2, float* vx,float* vy)
+void inicialitza(Punt* pIni, Punt* pFi, float* pVx,float* pVy)
 {
-	Punt* pAux;
-	pAux = p1;
-
-	while (pAux != p2)
+	while (pIni != pFi)
 	{
-		pAux->setX(*vx);
-		pAux->setY(*vy);
-		vx++;
-		vy++;		
-		pAux++;
+		pIni->setX(*pVx);
+		pIni->setY(*pVy);
+		pVx++;
+		pVy++;		
+		pIni++;
 	}
-	pAux->setX(*vx);
-	pAux->setY(*vy);	
+	pIni->setX(*pVx);
+	pIni->setY(*pVy);	
 }
 
 int main()
