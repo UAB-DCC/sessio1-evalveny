@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 class Poligon
 {
 public:
@@ -13,7 +12,7 @@ public:
 	~Poligon();
 	void init(string nomFitxer);
 	void escriu();
-	Poligon& operator=(const Poligon& p);
+	//Poligon& operator=(const Poligon& p);
 
 private:
 	int m_nVertexs;

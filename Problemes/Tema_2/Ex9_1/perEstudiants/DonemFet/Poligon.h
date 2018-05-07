@@ -1,22 +1,21 @@
 #include "Punt.h"
-#include <string>
 #include <iostream>
 #include <fstream>
-
+#include <string>
 using namespace std;
 
+const int MAXVERTEXS = 50;
 
 class Poligon
 {
 public:
-	Poligon();
 	~Poligon();
 	void init(string nomFitxer);
 	void escriu();
-	Poligon& operator=(const Poligon& p);
-
+	
 private:
 	int m_nVertexs;
-	Punt* m_vertexs;
+	Punt m_vertexs[MAXVERTEXS];
+
 };
 

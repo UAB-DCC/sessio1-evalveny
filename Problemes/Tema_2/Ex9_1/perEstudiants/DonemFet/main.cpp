@@ -12,7 +12,7 @@ int main()
 	poligon0.escriu();
 
 	poligon1 = poligon0;
-	
+
 	cout << "POLIGON 1" << endl;
 	cout << "=========" << endl;
 	poligon1.escriu();

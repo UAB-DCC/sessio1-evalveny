@@ -14,7 +14,7 @@ Poligon::~Poligon()
 	m_vertexs = NULL;	
 }
 
-Poligon& Poligon::operator=(const Poligon& p)
+/*Poligon& Poligon::operator=(const Poligon& p)
 {
 	if (this != &p)
 	{
@@ -36,7 +36,7 @@ Poligon& Poligon::operator=(const Poligon& p)
 		}
 	}
 	return *this;
-}
+}*/
 
 void Poligon::init( string nomFitxer)
 {
