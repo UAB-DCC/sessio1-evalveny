@@ -25,9 +25,15 @@ Llibre& Llibre::operator=(const Llibre& l)
 		m_titol = l.m_titol;
 		m_autor = l.m_autor;
 		m_nExemplars = l.m_nExemplars;
-		m_exemplars = new Exemplar[m_nExemplars];
-		for (int i = 0; i < m_nExemplars; i++)
-			m_exemplars[i]=l.m_exemplars[i];
+		if (m_exemplars != NULL)
+			delete[] m_exemplars;
+		if (m_nExemplars > 0)
+		{
+			m_exemplars = new Exemplar[m_nExemplars];
+			for (int i = 0; i < m_nExemplars; i++)
+				m_exemplars[i] = l.m_exemplars[i];
+		}
+		
 	}
 	return *this;
 }

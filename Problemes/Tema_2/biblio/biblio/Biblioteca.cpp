@@ -21,6 +21,11 @@ void Biblioteca::llegirLlibres(const string &nomFitxer)
 		int nExemplars;
 		int i = 0;
 		fitxer >> m_nLlibres;
+		if (m_llibres == NULL)
+		{
+			delete[] m_llibres;
+		}
+
 		m_llibres = new Llibre[m_nLlibres];
 		fitxer >> titol >> autor >> nExemplars;
 		while ((!fitxer.eof()) && (i < m_nLlibres))
