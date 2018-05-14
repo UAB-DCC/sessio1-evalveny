@@ -1,0 +1,2 @@
+Espectador1 10
+Espectador2 10
