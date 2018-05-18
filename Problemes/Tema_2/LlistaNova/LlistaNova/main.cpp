@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 void escriuLlista(Llista &l)
 {
 	Node *aux = l.getInici();

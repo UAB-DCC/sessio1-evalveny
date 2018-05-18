@@ -1,5 +1,3 @@
-
-
 #include "Llista.h"
 
 Llista::Llista()
@@ -85,12 +83,6 @@ int Llista::getNElements() const
 		nElements++;
 		aux = aux->getNext();
 	}
-	
-	/////////////////// PER TEST SEGMENTATION FAULT
-	Node* kk = m_primer;
-	delete kk;
-	///////////////////
-
 	return nElements;
 }
 
@@ -148,7 +140,12 @@ void Llista::inverteixLlista()
 		ant = aux;
 		aux = seguent;
 	}
-	m_primer = ant;		
+	m_primer = ant;
+
+	/////////////////// PER TEST SEGMENTATION FAULT
+	Node* kk = m_primer;
+	delete kk;
+	///////////////////
 }
 
 
