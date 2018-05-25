@@ -1,0 +1,624 @@
+JOC INICIAL
+Baralla
+0 1
+Destapades
+
+Resultat 0
+
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+
+JOC MOVIMENT 1
+Baralla
+1 1
+Destapades
+
+Resultat 0
+0 1
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+
+JOC MOVIMENT 2
+Baralla
+0 2
+Destapades
+2 1
+Resultat 0
+0 1
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 1
+JOC MOVIMENT 3
+Baralla
+1 2
+Destapades
+2 1
+Resultat 0
+0 2
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 1
+JOC MOVIMENT 4
+Baralla
+2 2
+Destapades
+1 2
+Resultat 0
+0 2
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 1
+JOC MOVIMENT 5
+Baralla
+0 3
+Destapades
+2 2
+Resultat 0
+0 2
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT 6
+Baralla
+1 3
+Destapades
+2 2
+Resultat 0
+0 3
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT 7
+Baralla
+1 4
+Destapades
+3 3
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT 8
+Baralla
+0 5
+Destapades
+3 4
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 0
+Baralla
+2 5
+Destapades
+1 5
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 1
+Baralla
+3 5
+Destapades
+2 5
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 2
+Baralla
+0 6
+Destapades
+3 5
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 3
+Baralla
+1 6
+Destapades
+0 6
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 4
+Baralla
+2 6
+Destapades
+1 6
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 5
+Baralla
+3 6
+Destapades
+2 6
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 6
+Baralla
+0 7
+Destapades
+3 6
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 7
+Baralla
+1 7
+Destapades
+0 7
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 8
+Baralla
+2 7
+Destapades
+1 7
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 9
+Baralla
+3 7
+Destapades
+2 7
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 10
+Baralla
+0 8
+Destapades
+3 7
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 11
+Baralla
+1 8
+Destapades
+0 8
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 12
+Baralla
+2 8
+Destapades
+1 8
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 13
+Baralla
+3 8
+Destapades
+2 8
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 14
+Baralla
+0 9
+Destapades
+3 8
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 15
+Baralla
+1 9
+Destapades
+0 9
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 16
+Baralla
+2 9
+Destapades
+1 9
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 17
+Baralla
+3 9
+Destapades
+2 9
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 18
+Baralla
+0 10
+Destapades
+3 9
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 19
+Baralla
+1 10
+Destapades
+0 10
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 20
+Baralla
+2 10
+Destapades
+1 10
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 21
+Baralla
+3 10
+Destapades
+2 10
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 22
+Baralla
+0 11
+Destapades
+3 10
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 23
+Baralla
+1 11
+Destapades
+0 11
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 24
+Baralla
+2 11
+Destapades
+1 11
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 25
+Baralla
+3 11
+Destapades
+2 11
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 26
+Baralla
+0 12
+Destapades
+3 11
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 27
+Baralla
+1 12
+Destapades
+0 12
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 28
+Baralla
+2 12
+Destapades
+1 12
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 29
+Baralla
+3 12
+Destapades
+2 12
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 30
+Baralla
+0 13
+Destapades
+3 12
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 31
+Baralla
+1 13
+Destapades
+0 13
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 32
+Baralla
+2 13
+Destapades
+1 13
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 33
+Baralla
+3 13
+Destapades
+2 13
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 34
+Baralla
+
+Destapades
+3 13
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT WHILE: 35
+Baralla
+
+Destapades
+3 13
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT 9
+Baralla
+1 1
+Destapades
+
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC MOVIMENT 10
+Baralla
+1 1
+Destapades
+
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
+JOC FINAL
+Baralla
+1 2
+Destapades
+2 1
+Resultat 0
+0 4
+Resultat 1
+
+Resultat 2
+
+Resultat 3
+3 2
