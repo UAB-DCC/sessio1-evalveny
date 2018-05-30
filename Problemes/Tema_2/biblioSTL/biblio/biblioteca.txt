@@ -1,0 +1,4 @@
+﻿Data_Structures_and_Data_Analysis_in_C++ Weiss 3
+Thinking_in_C++ Eckel 6
+Programaci�n_en_C++_para_ingenieros Xhafa 1
+The_C++_Programming_Language Stroustrup 5
